@@ -148,7 +148,7 @@ pipeline {
                         dir('Kubernetes') {
                             withKubeConfig(
                                 credentialsId: "${KUBERNETES_CREDENTIALS_ID}",
-                                serverUrl: 'https://D753AA7AC506D7B14EF0A791C5CA7C33.gr7.ap-southeast-1.eks.amazonaws.com', // Replace with actual EKS endpoint
+                                serverUrl: 'https://623E26DE8A245C3A944A8A0F336FA858.gr7.ap-southeast-1.eks.amazonaws.com', // Replace with actual EKS endpoint
                                 namespace: "${K8S_NAMESPACE}"
                             ) {
                                 sh 'kubectl version'
@@ -173,4 +173,5 @@ pipeline {
                 attachmentsPattern: 'trivyfs.txt,trivyimage.txt'
         }
     }
+
 }
