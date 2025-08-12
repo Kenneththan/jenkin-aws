@@ -5,7 +5,7 @@ metadata:
   labels:
     app: netflix-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: netflix-app
@@ -19,5 +19,6 @@ spec:
         image: thphyo/awsnetflix:latest
         ports:
         - containerPort: 80
+
 
 
